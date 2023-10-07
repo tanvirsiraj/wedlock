@@ -1,0 +1,8 @@
+.active {
+  color: #9accc9;
+}
+@media only screen and (max-width: 768px) {
+  .active {
+    color: white;
+  }
+}
