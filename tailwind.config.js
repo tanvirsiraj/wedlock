@@ -7,6 +7,11 @@ export default {
         "primary-color": "#9ACCC9",
         "secondary-color": "#F4A492",
       },
+      fontFamily: {
+        "primary-font": "'Poppins', sans-serif",
+        logo: "'Pacifico', cursive",
+        banner: "'Great Vibes', cursive",
+      },
     },
   },
   plugins: [require("daisyui")],
