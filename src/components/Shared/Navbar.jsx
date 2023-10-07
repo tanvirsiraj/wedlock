@@ -34,15 +34,15 @@ const Navbar = () => {
         </a>
         <div onClick={() => setOpen(!open)} className="lg:hidden">
           {open ? (
-            <AiOutlineMenu className="text-2xl cursor-pointer text-black" />
-          ) : (
             <AiOutlineClose className="text-2xl cursor-pointer text-black" />
+          ) : (
+            <AiOutlineMenu className="text-2xl cursor-pointer text-black" />
           )}
         </div>
 
         <ul
           className={` absolute duration-1000 z-50 mt-2  lg:static lg:flex gap-8 items-center bg-primary-color lg:bg-inherit py-4 ps-4 pe-20 rounded-lg text-black text-lg font-semibold ${
-            open ? "-top-60" : "top-10"
+            open ? "top-10" : "-top-60"
           }`}
         >
           <li>

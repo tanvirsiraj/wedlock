@@ -11,6 +11,7 @@ export default {
         "primary-font": "'Poppins', sans-serif",
         logo: "'Pacifico', cursive",
         banner: "'Great Vibes', cursive",
+        "section-title": "'Marck Script', cursive",
       },
     },
   },
