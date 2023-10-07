@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Wedding Decoration & Stage Arts",
+    "img": "https://i.ibb.co/9rqdYWf/chinise-building.jpg",
+    "price": "$1,500",
+    "shortDes": "Exquisite decor to transform your wedding venue into a dreamland.",
+    "details": "Our team of skilled artisans crafts exquisite decor, transforming your wedding venue into a dreamland. From elegant stage setups to intricate floral arrangements, we immerse your guests in a world of beauty and enchantment."
+  },
+  {
+    "id": 2,
+    "name": "Royal Wedding Planners",
+    "img": "https://i.ibb.co/Dp653JF/celebration-hall-with-full-guests.jpg",
+    "price": "$3,000",
+    "shortDes": "Crafting regal weddings tailored to your dreams.",
+    "details": "Our royal wedding planners specialize in creating regal celebrations tailored to your dreams. With meticulous attention to detail, we curate a truly majestic affair fit for a king and queen. Experience the grandeur of a lifetime."
+  },
+  {
+    "id": 3,
+    "name": "Wedding Entrance",
+    "img": "https://i.ibb.co/Vmgkzdf/room-with-flowers.jpg",
+    "price": "$500",
+    "shortDes": "Grand entrances that set the tone for your special day.",
+    "details": "Elevate your special day with grand entrances that set the perfect tone. Our creative designs leave a lasting impression, whether you prefer a classic archway, a modern tunnel, or a unique vision of your own."
+  },
+  {
+    "id": 4,
+    "name": "Holud Stage Decor",
+    "img": "https://i.ibb.co/5vcmw6g/holud.jpg",
+    "price": "$800",
+    "shortDes": "Vibrant and traditional stage decor for pre-wedding ceremonies.",
+    "details": "Celebrate your cultural traditions with our vibrant Holud stage decor. Our designs are colorful, captivating, and steeped in tradition, creating a warm and inviting atmosphere for pre-wedding ceremonies."
+  },
+  {
+    "id": 5,
+    "name": "Wedding & Reception Stage",
+    "img": "https://i.ibb.co/L6RkQG2/wedding-altar-made-colorful-spearworts-white-curtain.jpg",
+    "price": "$2,200",
+    "shortDes": "Versatile stage setups for both wedding and reception.",
+    "details": "Seamlessly transition from wedding vows to celebratory reception with our versatile stage setups. Tailored to reflect your theme and style, our designs enhance the beauty and flow of your celebration, making it truly memorable."
+  },
+  {
+    "id": 6,
+    "name": "Wedding Photography",
+    "img": "https://i.ibb.co/LZtR9dS/side-view-photographer-holding-camera.jpg",
+    "price": "$2,500",
+    "shortDes": "Capture every moment of your special day with artistic finesse.",
+    "details": "Our team of skilled photographers captures every moment of your special day with artistic finesse. From intimate exchanges to grand celebrations, we document your love story with creativity and professionalism, ensuring cherished memories that last a lifetime."
+  }
+]
