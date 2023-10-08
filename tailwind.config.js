@@ -12,6 +12,7 @@ export default {
         logo: "'Pacifico', cursive",
         banner: "'Great Vibes', cursive",
         "section-title": "'Marck Script', cursive",
+        "section-title2": "'Crimson Text', serif",
       },
     },
   },

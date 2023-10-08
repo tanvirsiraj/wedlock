@@ -3,7 +3,7 @@ import banner from "../../assets/banner.jpg";
 const Banner = () => {
   return (
     <div
-      className="absolute top-10 hero h-[350px] lg:h-[800px] "
+      className="absolute top-10 hero h-[350px] lg:h-[800px]"
       style={{
         backgroundImage: `url(${banner})`,
       }}
@@ -11,7 +11,11 @@ const Banner = () => {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
         <div>
-          <h1 className="mb-2 text-4xl lg:text-8xl font-bold font-banner text-white">
+          <h1
+            className="mb-2 text-4xl lg:text-8xl font-bold font-banner text-white"
+            data-aos="flip-right"
+            data-aos-duration="2000"
+          >
             Wedding
           </h1>
           <p className=" mb-4 lg:mb-16 text-white lg:text-3xl font-semibold">
