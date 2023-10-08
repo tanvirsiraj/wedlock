@@ -1,7 +1,8 @@
 import { PropTypes } from "prop-types";
+import { Link } from "react-router-dom";
 
 const Service = ({ service }) => {
-  console.log(service);
+  // console.log(service);
   const { id, name, img, price, shortDes } = service;
   return (
     <div className="card  glass" data-aos="zoom-in-up">
@@ -15,9 +16,12 @@ const Service = ({ service }) => {
         <p className="text-base text-black">{shortDes}</p>
         <p className="text-lg text-black font-semibold">{price}</p>
         <div className="card-actions justify-center mt-4">
-          <button className="btn bg-primary-color text-white border-none">
+          <Link
+            to={`service/${id}`}
+            className="btn bg-primary-color hover:bg-secondary-color text-white border-none"
+          >
             Read More...
-          </button>
+          </Link>
         </div>
       </div>
     </div>

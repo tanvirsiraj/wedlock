@@ -5,6 +5,7 @@ import Gallery from "../components/Gallery/Gallery";
 import About from "../components/About/About";
 import Login from "../components/Shared/Login";
 import Register from "../components/Shared/Register";
+import Details from "../components/Details/Details";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,8 +28,12 @@ const router = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: "/",
+        path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/service/:id",
+        element: <Details />,
       },
     ],
   },

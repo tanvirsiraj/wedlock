@@ -14,7 +14,7 @@ const Reservation = () => {
             </div>
             <div className="card flex-shrink-0 w-full max-w-sm  bg-transparent">
               <form className="card-body">
-                <h2 className="md:text-2xl text-center text-black font-semibold  font-section-title2">
+                <h2 className="md:text-3xl text-center text-black font-semibold  font-section-title">
                   Make Reservations
                 </h2>
                 <div className="form-control ">
