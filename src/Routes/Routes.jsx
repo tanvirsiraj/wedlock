@@ -6,6 +6,7 @@ import About from "../components/About/About";
 import Login from "../components/Shared/Login";
 import Register from "../components/Shared/Register";
 import Details from "../components/Details/Details";
+import PrivateRoute from "./PrivateRoute";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,7 +34,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/service/:id",
-        element: <Details />,
+        element: (
+          <PrivateRoute>
+            <Details />
+          </PrivateRoute>
+        ),
       },
     ],
   },

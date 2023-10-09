@@ -1,5 +1,6 @@
 .active {
-  color: #9accc9;
+  color: #9accc9 !important;
+  background: transparent !important;
 }
 @media only screen and (max-width: 768px) {
   .active {

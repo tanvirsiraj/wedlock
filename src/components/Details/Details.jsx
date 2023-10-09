@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Context } from "../../context/AuthContext";
+import Swal from "sweetalert2";
 
 const Details = () => {
   const { id } = useParams();
@@ -15,6 +16,16 @@ const Details = () => {
       setSelected(selectedData);
     }
   }, [services]);
+
+  const handleConfirm = () => {
+    Swal.fire({
+      position: "top-center",
+      icon: "success",
+      title: "Your reservations has been confirmed",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  };
   return (
     <div className="mx-2 lg:max-w-6xl lg:mx-auto my-10">
       <div className="card md:card-side bg-[#ECF6F7] shadow-lg">
@@ -26,7 +37,10 @@ const Details = () => {
           <p className="font-bold text-lg">{selected.price}</p>
           <p>{selected.details}</p>
           <div className="card-actions">
-            <button className="btn bg-primary-color hover:bg-secondary-color border-none text-white">
+            <button
+              onClick={handleConfirm}
+              className="btn bg-primary-color hover:bg-secondary-color border-none text-white"
+            >
               Confirm
             </button>
           </div>
