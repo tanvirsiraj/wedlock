@@ -20,11 +20,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/gallery",
-        element: <Gallery />,
+        element: (
+          <PrivateRoute>
+            <Gallery />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/about",
-        element: <About />,
+        element: (
+          <PrivateRoute>
+            <About />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",
