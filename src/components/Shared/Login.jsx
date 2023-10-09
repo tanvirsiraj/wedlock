@@ -1,11 +1,12 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from "react-router-dom";
 import { Context } from "../../context/AuthContext";
 import Swal from "sweetalert2";
 
 const Login = () => {
-  const { signInUser, signInWithGoogle } = useContext(Context);
+  const { signInUser, signInWithGoogle, user } = useContext(Context);
+  const [error, setError] = useState("");
   const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
@@ -13,6 +14,7 @@ const Login = () => {
     const password = e.target.password.value;
 
     // sign in user
+
     signInUser(email, password)
       .then((result) => {
         // console.log(result.user);
@@ -26,7 +28,9 @@ const Login = () => {
         });
         navigate("/");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        setError(error.message);
+      });
   };
 
   const handleGoogleSignIn = () => {
@@ -80,7 +84,7 @@ const Login = () => {
                 Login
               </button>
             </div>
-
+            <p className="text-red-600">{error}</p>
             <div className="divider text-lg font-semibold">OR login with</div>
             <button
               onClick={handleGoogleSignIn}

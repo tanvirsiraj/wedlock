@@ -7,10 +7,12 @@ import Login from "../components/Shared/Login";
 import Register from "../components/Shared/Register";
 import Details from "../components/Details/Details";
 import PrivateRoute from "./PrivateRoute";
+import NotFound from "../components/NotFound/NotFound";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <NotFound></NotFound>,
     children: [
       {
         path: "/",

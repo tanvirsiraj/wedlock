@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 const Services = () => {
   const { services } = useContext(Context);
-  console.log(services);
+  // console.log(services);
   return (
     <div className="max-w-6xl mx-auto mt-[350px] lg:mt-[800px]">
       <div className="text-center md:max-w-3xl md:mx-auto">

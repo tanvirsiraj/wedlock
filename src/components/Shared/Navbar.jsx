@@ -6,7 +6,7 @@ import {
   FaPinterest,
   FaTwitter,
 } from "react-icons/fa";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
 import { Context } from "../../context/AuthContext";
 
@@ -24,7 +24,7 @@ const Navbar = () => {
   };
   const navLinks = (
     <>
-      <li className="py-2   rounded-lg lg:text-black text-lg font-semibold  ">
+      <li className="py-2   rounded-lg lg:text-black text-lg font-semibold">
         <NavLink to="/">Home</NavLink>
       </li>
       <li className="py-2   rounded-lg lg:text-black text-lg font-semibold  ">
