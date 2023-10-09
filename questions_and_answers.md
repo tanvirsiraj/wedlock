@@ -45,7 +45,7 @@ sum(1, "2");
 
 #### Answer: C
 
-In the above mentioned code, the `sum` function takes two parameters, `a` and `b`, and attempts to add them together using the `+` operator.Calling sum() with a number and a string, it will treat the number `1` as a string and concatenate it with the string `"2"`, resulting in the string `"12"` as the output.
+In the above mentioned code, the sum function takes two parameters, a and b, and attempts to add them together using the + operator.Calling sum() with a number and a string, it will treat the number 1 as a string and concatenate it with the string "2", resulting in the string "12" as the output.
 
 </p>
 </details>
