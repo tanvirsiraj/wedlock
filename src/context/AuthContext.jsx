@@ -26,9 +26,11 @@ const AuthContext = ({ children }) => {
       .then((data) => setServices(data));
   }, []);
 
-  const createUser = (email, password) => {
+  const createUser = (email, password, name, imgUrl) => {
     setLoading(true);
-    return createUserWithEmailAndPassword(auth, email, password);
+    createUserWithEmailAndPassword(auth, email, password).then((res) =>
+      updateProfile(res.user, { name: name, imgUrl: imgUrl })
+    );
   };
   const signInUser = (email, password) => {
     setLoading(true);

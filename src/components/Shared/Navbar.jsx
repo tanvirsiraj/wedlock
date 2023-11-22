@@ -22,19 +22,22 @@ const Navbar = () => {
         console.log(error.message);
       });
   };
-  const navLinks = (
-    <>
-      <li className="py-2   rounded-lg lg:text-black text-lg font-semibold">
-        <NavLink to="/">Home</NavLink>
-      </li>
-      <li className="py-2   rounded-lg lg:text-black text-lg font-semibold  ">
-        <NavLink to="/gallery">Gallery</NavLink>
-      </li>
-      <li className="py-2   rounded-lg lg:text-black text-lg font-semibold  ">
-        <NavLink to="/about">About</NavLink>
-      </li>
-    </>
-  );
+  const navLinks = () => {
+    return (
+      <div>
+        <li className="py-2   rounded-lg lg:text-black text-lg font-semibold">
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li className="py-2   rounded-lg lg:text-black text-lg font-semibold">
+          <NavLink to="/gallery">Gallery</NavLink>
+        </li>
+        <li className="py-2   rounded-lg lg:text-black text-lg font-semibold">
+          <NavLink to="/about">About</NavLink>
+        </li>
+      </div>
+    );
+  };
+
   return (
     <div>
       <div className="relative bg-primary-color py-2">

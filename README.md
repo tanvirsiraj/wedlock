@@ -1,7 +1,5 @@
 # WedLock
 
-[Visit our website](https://www.example.com)
-
 ## Projects Features
 
 - This website is a Wedding Management Website

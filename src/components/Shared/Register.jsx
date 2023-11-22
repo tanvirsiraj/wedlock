@@ -25,25 +25,9 @@ const Register = () => {
       setError("Password don't have a special characters");
       return;
     }
-    createUser(email, password)
-      .then((result) => {
-        console.log(result.user);
-        profileUpdate(name, imgUrl)
-          .then(() => {})
-          .catch(() => {});
-        e.target.reset();
-        Swal.fire({
-          position: "top-center",
-          icon: "success",
-          title: "User created successfully",
-          showConfirmButton: false,
-          timer: 1500,
-        });
-        navigate("/");
-      })
-      .catch((error) => {
-        setError(error.message);
-      });
+    createUser(email, password, name, imgUrl).catch((error) => {
+      setError(error.message);
+    });
   };
   return (
     <div className="max-w-6xl mx-auto my-10 ">
